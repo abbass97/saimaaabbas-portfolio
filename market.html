@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2Market Analysis</title>
+  </head>
+  <body>
+    <header>
+      <h2 id="name">Saima Abbas</h2>
+
+      <p id="id_banner">
+        Data Analyst | Machine Learning Enthusiast | Data Storyteller
+      </p>
+      <nav id="navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <article class="main_container">
+      <h1 class="main_heading">Exploratory Data Analysis for 2Market</h1>
+
+      <h3>Overview:</h3>
+      <p>
+        2Market, a global supermarket, noticed that their online purchases via
+        social media were significantly lower than in-store sales. The company
+        sought insights into customer behaviour and demographics. They also
+        wanted to explore advertising effectiveness and best-selling products to
+        improve sales revenue and lead conversion.
+      </p>
+      <h3>Approach:</h3>
+      <p>For this project Excel, SQL and Tableau were used.</p>
+      <ul>
+        <li>
+          <strong>Data Cleaning & Processing:</strong> Prior to conducting
+          Exploratory Data Analysis, the data was cleaned and pre-processed
+          using Excel functions and filters to remove any outliers and blank
+          spaces. For data integrity, the data was checked for duplicates,
+          spelling errors and name inconsistencies.
+        </li>
+        <li>
+          <strong>Exploratory Analysis:</strong> Descriptive statistical
+          analysis and Pivot Table in Microsoft Excel and advanced SQL queries
+          in PgAdmin were run to explore customer demographics, their purchase
+          behaviour and ad platform effectiveness. Here is an example of a SQL
+          code I used:
+        </li>
+
+        <pre>
+          <code>
+            The total spend per product per country
+
+SELECT "country", 
+SUM(m."liquor_sale") AS total_liqour_sales, 
+SUM(m."fish_sale") AS total_fish_sales, 
+SUM(m."veg_sale") AS total_veg_sales, 
+SUM(m."nonveg_sale") AS total_non_veg_sales,
+SUM(m."choc_sale") AS total_chocolate_sales, 
+SUM(m."comm_sale") AS total_commodities_sales
+FROM public.marketing_data m
+GROUP BY "country"
+ORDER BY "country" DESC;
+
+
+          </code>
+        </pre>
+        <p>
+          To view my complete code, please click on the link to GitHub at the
+          bottom of this page.
+        </p>
+        <li>
+          <strong>Data Visualisation: </strong>Tableau was used to create
+          interactive and engaging visualisations to showcase key findings.
+          Excel charts and graphs were also used to display the insights.
+        </li>
+      </ul>
+
+      <h3>Key Insights:</h3>
+
+      <ul>
+        <li>
+          <strong>Customer Demographics:</strong> The average customer age is
+          54, with spending patterns varying by age and income as seen in the
+          figure below.
+        </li>
+        <br />
+        <img
+          id="customer_age"
+          src="Images/customer_age.jpg"
+          alt="Avarage customer age"
+          width="1000"
+          height="600"
+        />
+        <li>
+          <strong>Sales Trends:</strong> Liquor is the best-selling item across
+          all demographics and regions.
+        </li>
+
+        <br />
+
+        <img
+          id="popular_product"
+          src="Images/products_by_age.jpg"
+          alt="Most popular social media platform"
+          width="1000"
+          height="600"
+        />
+
+        <li>
+          <strong>Advertising Effectiveness:</strong> Twitter, Instagram, and
+          Bulk Mail are the most successful ad platforms.
+        </li>
+        <br />
+        <img
+          id="popular_platform"
+          src="Images/popular_platform.jpg"
+          alt="Most popular social media platform"
+          width="1000"
+          height="600"
+        />
+
+        <li>
+          <strong>Regional Insights:</strong> Spain recorded the highest total
+          sales, while households with fewer children spent more on groceries.
+        </li>
+        <br />
+        <p>
+          For more detail, click on the link below to view my Tableau dashboard.
+        </p>
+      </ul>
+
+      <h3>Recommendations:</h3>
+      <p>
+        To improve online sales, 2Market should target customers aged 50-65 in
+        Spain, Saudi Arabia, and Canada with ads on Twitter, Instagram, and Bulk
+        Mail, focusing on liquor and non-vegetable products.
+      </p>
+
+      <p>
+        For a complete picture, please feel free to click on the links below to
+        the report
+      </p>
+      <a
+        href="https://drive.google.com/file/d/1PR59KistPZkCHli7ysRv-HSVje50mADE/view?usp=drive_link"
+        ><button>View Full Report</button></a
+      >
+      <a href="dashboard.html"><button>View Dashboard</button></a>
+
+      <a
+        href="https://github.com/abbass97/2Market-SQL-Queries/tree/main"
+        target="_blank"
+      >
+        <img
+          src="https://img.shields.io/badge/GitHub-View%20SQL%20Queries-blue?logo=github"
+          alt="GitHub Repo"
+        />
+      </a>
+    </article>
+  </body>
+</html>
