@@ -1,0 +1,379 @@
+button {
+  background-color: #24292e;
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #e80a0a;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 2rem;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.connect-btn {
+  padding: 10px 22px;
+  font-size: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: white;
+  color: #010810;
+  border: 1px solid #010810;
+
+  border-radius: 0px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.connect-btn:hover {
+  background-color: #010810;
+  color: white;
+}
+
+#connect {
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  margin-top: 75px;
+}
+
+#collab {
+  margin-bottom: 40px;
+}
+
+#name {
+  margin: 0;
+  font-size: 1.2rem;
+  padding: 5px 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#page_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #ddd;
+  flex-wrap: wrap; /* Optional: helps on smaller screens */
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+#id_banner {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #555;
+}
+
+#navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* spacing between links and dividers */
+  font-family: Cambria, serif;
+  font-size: 1rem;
+}
+
+#navigation a {
+  text-decoration: none;
+  color: #00060b;
+  padding: 0 5px;
+  transition: color 0.3s ease;
+}
+
+#navigation a:hover {
+  color: #7d8182;
+}
+
+.divider {
+  color: #999;
+  user-select: none;
+}
+
+a {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  padding: 7px 7px;
+  font-size: 1.3rem;
+}
+
+.main_heading {
+  font-style: normal;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  flex-wrap: wrap; /* optional: helps on small screens */
+}
+
+.text-content {
+  flex: 1;
+  max-width: 55%;
+}
+
+/*
+#resume {
+  flex: 1;
+  max-width: 10px;
+  margin-top: 2rem; 
+}
+
+#resume button {
+  padding: 8px 12px; 
+  margin-top: 50px;
+  font-size: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#resume button:hover {
+  background-color: #0056b3;
+}
+*/
+#cv button {
+  padding: 8px 12px;
+  margin-top: 10px;
+  margin-left: 40%;
+  font-size: 0.9rem; /* Reduce text size */
+  background-color: white;
+  color: #010810;
+  border: 1px solid #010810;
+
+  border-radius: 0px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#cv button:hover {
+  background-color: #010810;
+  color: white;
+}
+
+.saima_pic {
+  flex: 1;
+  max-width: 30%;
+  height: auto;
+  max-height: 500px; /* Limit height */
+  width: 100%; /* Keeps it responsive within its container */
+  border: 10px solid #ccc; /* light gray border */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.saima_name {
+  font-size: 3.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+}
+
+#punchline {
+  font-size: 1.2rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: oblique;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+#customer_age {
+  margin-bottom: -250px;
+}
+
+#popular_product {
+  margin-bottom: -200px;
+}
+
+#popular_platform {
+  margin-bottom: -200px;
+}
+
+.tile-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #000;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 0.7rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tile:hover {
+  background-color: #f4f5f7;
+  color: #007bff;
+  border-color: #007bff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.tile-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+.icon-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.icon-link {
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.icon-link:hover {
+  transform: scale(1.1);
+}
+
+.icon-image {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border: none;
+}
+
+/*  Project Page*/
+.project {
+  margin: 40px 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.project-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.project .text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.project .image {
+  flex-shrink: 0;
+}
+
+.project .image img {
+  width: 300px;
+  height: auto;
+  border-radius: 0px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.project .connect-btn {
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .project-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project .image img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .project .text {
+    text-align: center;
+  }
+}
+
+#personal-brand {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.85rem;
+  color: #555;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}

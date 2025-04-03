@@ -3,28 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
     <title>Saima's Projects</title>
   </head>
 
   <body>
-    <header>
-      <h2 id="name">Saima Abbas</h2>
+    <header id="page_top">
+      <div class="header_left">
+        <p id="name">Saima Abbas</p>
 
-      <p id="id_banner">
-        Data Analyst | Machine Learning Enthusiast | Data Storyteller
-      </p>
+        <p id="id_banner">
+          Data Analyst | Machine Learning Enthusiast | Data Storyteller
+        </p>
+      </div>
+
       <nav id="navigation">
         <a href="index.html">Home</a>
+        <span class="divider">|</span>
         <a href="about.html">About</a>
+        <span class="divider">|</span>
         <a href="projects.html">Projects</a>
+        <span class="divider">|</span>
         <a href="cv.html">CV</a>
+        <span class="divider">|</span>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
 
     <article class="main_container">
-      <h1 class="main_heading">My most recent Projects</h1>
-
+      <p class="main_heading">My most recent Projects</p>
+      <p>
+        I recently completed Data Analytics Career Accelerator course from
+        London School of Economics and Polital Science (LSE). During the course,
+        I
+      </p>
       <section id="2Market">
         <h3 class="secondary_heading">
           Global Supermarkert Analysis: Data Analysis for Business
@@ -47,7 +59,7 @@
           effective advertising platform and to understand customers' purchasing
           behaviour.
         </p>
-        <a href="market.html"><button>Read More</button></a>
+        <a href="market.html"><button class="connect-btn">Read More</button></a>
       </section>
 
       <section id="NHS">
@@ -67,7 +79,7 @@
           analysing National Healthcare (NHS) dataset by applying Python, web
           scraping techniques and APIs.
         </p>
-        <a href="nhs.html"><button>Read More</button></a>
+        <a href="nhs.html"><button class="connect-btn">Read More</button></a>
       </section>
 
       <section id="Games">
@@ -84,7 +96,7 @@
           height="300"
         />
         <p class="project_overview"></p>
-        <a href="turtle.html"><button>Read More</button></a>
+        <a href="turtle.html"><button class="connect-btn">Read More</button></a>
       </section>
 
       <section id="eProject">
@@ -100,8 +112,38 @@
           height="300"
         />
         <p class="project_overview"></p>
-        <a href="eproject.html"><button>Read More</button></a>
+        <a href="eproject.html"
+          ><button class="connect-btn">Read More</button></a
+        >
       </section>
     </article>
+    <footer id="connect">
+      <div style="text-align: center; padding: 2rem">
+        <h3>Thank you for visiting my portfolio!</h3>
+        <p id="collab">
+          If you’d like to collaborate or get in touch, I’d love to hear from
+          you.
+        </p>
+
+        <!-- Contact Icons Row -->
+<div class="icon-row">
+  <!-- Let's Connect (form) -->
+  <a href="/contact.html" class="icon-link" title="Let’s Connect">
+    <img src="https://cdn-icons-png.flaticon.com/512/726/726623.png" alt="Connect Icon" class="icon-image" />
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/saimaabbas52" target="_blank" class="icon-link" title="LinkedIn">
+    <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn Icon" class="icon-image" />
+  </a>
+
+  <!-- Email -->
+  <a href="mailto:saimaabbas2021@gmail.com" class="icon-link" title="Email">
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon" class="icon-image" />
+  </a>
+</div>
+<p id="personal-brand">© 2025 Saima Abbas | Designed, developed, and deployed by me — powered by curiosity and caffeine.</p>
+        
+    </footer>
   </body>
 </html>

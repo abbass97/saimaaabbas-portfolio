@@ -3,25 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
     <title>Contact Me</title>
   </head>
 
   <body>
     <article class="main_container">
-      <header>
-        <h2>Saima Abbas</h2>
+      <header id="page_top">
+        <div class="header_left">
+          <p id="name">Saima Abbas</p>
 
-        <p id="id_banner">
-          Data Analyst | Machine Learning Enthusiast | Data Storyteller
-        </p>
-        <nav>
+          <p id="id_banner">
+            Data Analyst | Machine Learning Enthusiast | Data Storyteller
+          </p>
+        </div>
+
+        <nav id="navigation">
           <a href="index.html">Home</a>
+          <span class="divider">|</span>
           <a href="about.html">About</a>
+          <span class="divider">|</span>
           <a href="projects.html">Projects</a>
+          <span class="divider">|</span>
           <a href="cv.html">CV</a>
+          <span class="divider">|</span>
           <a href="contact.html">Contact</a>
         </nav>
       </header>
+
+      <div class="contact-container">
+        <h2>Contact Me</h2>
+        <form
+          action="mailto:saima_abbas@hotmail.com"
+          method="POST"
+          enctype="text/plain"
+        >
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button class="connect-btn" type="submit">Send Message</button>
+        </form>
+      </div>
     </article>
+    <footer>
+      <p id="personal-brand">
+        © 2025 Saima Abbas | Designed, developed, and deployed by me — powered
+        by curiosity and caffeine.
+      </p>
+    </footer>
   </body>
 </html>

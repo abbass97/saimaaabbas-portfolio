@@ -3,37 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
     <title>2Market Analysis</title>
   </head>
   <body>
-    <header>
-      <h2 id="name">Saima Abbas</h2>
+    <header id="page_top">
+      <div class="header_left">
+        <p id="name">Saima Abbas</p>
 
-      <p id="id_banner">
-        Data Analyst | Machine Learning Enthusiast | Data Storyteller
-      </p>
+        <p id="id_banner">
+          Data Analyst | Machine Learning Enthusiast | Data Storyteller
+        </p>
+      </div>
+
       <nav id="navigation">
         <a href="index.html">Home</a>
+        <span class="divider">|</span>
         <a href="about.html">About</a>
+        <span class="divider">|</span>
         <a href="projects.html">Projects</a>
+        <span class="divider">|</span>
         <a href="cv.html">CV</a>
+        <span class="divider">|</span>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
 
     <article class="main_container">
-      <h1 class="main_heading">Exploratory Data Analysis for 2Market</h1>
+      <p class="main_heading">Exploratory Data Analysis for 2Market</p>
 
       <h3>Overview:</h3>
       <p>
-        2Market, a global supermarket, noticed that their online purchases via
-        social media were significantly lower than in-store sales. The company
-        sought insights into customer behaviour and demographics. They also
-        wanted to explore advertising effectiveness and best-selling products to
-        improve sales revenue and lead conversion.
+        2Market, a global supermarket, conducted a customer sales and marketing
+        review which revealed a significantly lower online purchases via
+        different social media platforms compared to their in-store sales. With
+        the goal of increasing online revenue and improving lead conversion
+        rates, I was tasked with analysing customers’ purchasing behaviour,
+        demographics, and effectiveness of various advertising channels. I
+        conducted a descriptive and diagnostic analysis of the supermarket’s
+        marketing and social media advertising data. The analysis focused on
+        identifying high-performing product categories, preferred platforms
+        across demographics, and regional purchasing trends.
+        <br />
+        <br />Based on the gathered insights, I was able to make the following
+        recommendations: To boost online sales and lead conversions, supermarket
+        sales department should target customers aged 50–65 in Spain, Saudi
+        Arabia, and Canada via Twitter, Instagram, and Bulk Mail. The campaigns
+        should focus on promoting liquor and non-vegetable products—categories
+        most aligned with the purchasing patterns of this segment.
       </p>
       <h3>Approach:</h3>
-      <p>For this project Excel, SQL and Tableau were used.</p>
+      <p>For this project Excel, SQL, PgAdmin and Tableau were used.</p>
       <ul>
         <li>
           <strong>Data Cleaning & Processing:</strong> Prior to conducting
@@ -68,10 +88,7 @@ ORDER BY "country" DESC;
 
           </code>
         </pre>
-        <p>
-          To view my complete code, please click on the link to GitHub at the
-          bottom of this page.
-        </p>
+
         <li>
           <strong>Data Visualisation: </strong>Tableau was used to create
           interactive and engaging visualisations to showcase key findings.
@@ -129,36 +146,76 @@ ORDER BY "country" DESC;
         </li>
         <br />
         <p>
-          For more detail, click on the link below to view my Tableau dashboard.
+          For a complete picture, please click on the links below and feel free
+          to peruse my report, and view my complete SQL code and Tableau
+          Dadshboard.
         </p>
       </ul>
 
-      <h3>Recommendations:</h3>
-      <p>
-        To improve online sales, 2Market should target customers aged 50-65 in
-        Spain, Saudi Arabia, and Canada with ads on Twitter, Instagram, and Bulk
-        Mail, focusing on liquor and non-vegetable products.
-      </p>
+      <div class="tile-container">
+        <a
+          href="https://drive.google.com/file/d/1PR59KistPZkCHli7ysRv-HSVje50mADE/view?usp=drive_link"
+          target="_blank"
+          class="tile"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png"
+            alt="Report"
+            class="tile-icon"
+          />
+          <span class="tile-text">Full Report</span>
+        </a>
 
-      <p>
-        For a complete picture, please feel free to click on the links below to
-        the report
-      </p>
-      <a
-        href="https://drive.google.com/file/d/1PR59KistPZkCHli7ysRv-HSVje50mADE/view?usp=drive_link"
-        ><button>View Full Report</button></a
-      >
-      <a href="dashboard.html"><button>View Dashboard</button></a>
+        <a href="dashboard.html" class="tile">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/942/942748.png"
+            alt="Dashboard"
+            class="tile-icon"
+          />
+          <span class="tile-text">Dashboard</span>
+        </a>
 
-      <a
-        href="https://github.com/abbass97/2Market-SQL-Queries/tree/main"
-        target="_blank"
-      >
-        <img
-          src="https://img.shields.io/badge/GitHub-View%20SQL%20Queries-blue?logo=github"
-          alt="GitHub Repo"
-        />
-      </a>
+        <a
+          href="https://github.com/abbass97/2Market-SQL-Queries/tree/main"
+          target="_blank"
+          class="tile"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            alt="GitHub"
+            class="tile-icon"
+          />
+          <span class="tile-text">GitHub</span>
+        </a>
+      </div>
     </article>
+
+    <footer id="connect">
+      <div style="text-align: center; padding: 2rem">
+        <h3>Thank you for visiting my portfolio!</h3>
+        <p id="collab">
+          If you’d like to collaborate or get in touch, I’d love to hear from
+          you.
+        </p>
+
+        <!-- Contact Icons Row -->
+<div class="icon-row">
+  <!-- Let's Connect (form) -->
+  <a href="/contact.html" class="icon-link" title="Let’s Connect">
+    <img src="https://cdn-icons-png.flaticon.com/512/726/726623.png" alt="Connect Icon" class="icon-image" />
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/saimaabbas52" target="_blank" class="icon-link" title="LinkedIn">
+    <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn Icon" class="icon-image" />
+  </a>
+
+  <!-- Email -->
+  <a href="mailto:saimaabbas2021@gmail.com" class="icon-link" title="Email">
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon" class="icon-image" />
+  </a>
+</div>
+<p id="personal-brand">© 2025 Saima Abbas | Designed, developed, and deployed by me — powered by curiosity and caffeine.</p>
+    </footer>
   </body>
 </html>
