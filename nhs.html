@@ -33,80 +33,181 @@
       <p class="main_heading">Applying Python to NHS Dataset</p>
 
       <h3>Overview:</h3>
-      <p>The NHS was concerned about increasing patient demand and a high number of missed appointments. As part of a data analytics assignment, I was tasked to investigate how the NHS can make better decisions around resource 
-        planning and patient engagement. This analysis explores appointment data, service utilisation patterns, and public sentiment via Twitter. </p>
+      <p>As part of the LSE Data Analytics Online Career Accelerator (Course 2), I conducted an in-depth analysis of real NHS datasets to explore how the UK's healthcare system is responding to increased patient demand, digital engagement, and missed appointments. This project combined Python-based exploratory analysis, data visualisation, and public Twitter sentiment to derive actionable healthcare insights.
+
+        <br>The analysis focused on:
+
+        <ol>
         
+        <li>Utilisation trends across appointment types, modes, healthcare professionals and Time between Booking and Appointment</li>
+        <br>
         
-       <p>Based on the gathered insights, I was able to make the following recommendations: </p>
-       
-       
-       <ul> 
-        <li>
-        Focus on better utilisation of current capacity rather than immediate expansion.
-        </li>
+        <li>Staff and capacity evaluation across regions</li>
+        <br>
         
-        <li>Use Twitter to promote services and engage patients with hashtags like #healthcare and #mentalhealth. </li>
-        
-       <li>Introduce SMS reminders and an improved online booking system to reduce no-shows. </li>
-        
-       <li> Train staff in accurate data collection to improve data quality.</li>
-       </ul> 
+        <li>Patient behaviour patterns, including missed appointments</li>
+        <br>
+        <li>Public sentiment and trend tracking via Twitter hashtags</li>
+      <br>
+      </ol>
+      </p>
+       <p>Based on the gathered insights, I was able to make the following recommendations: 
+       <ul>
+        <li>NHS appears to be operating within its daily appointment capacity, but service delivery could be more evenly distributed..</li>
+        <br>
+        <li>Implement automated reminder systems targeting the 8 – 14 day lead-time window, where missed appointments are most common.</li>
+        <br>
+        <li>Address "Unknown" and "Unmapped" entries in appointment data to improve data quality. Train staff in accurate data collection to improve data quality.</li>
+       <br>
+        <li>Leverage high-performing Twitter themes and hashtags for public campaigns — e.g., use #Healthcare and #DigitalHealth to raise awareness and gather feedback.</li>
+        <br>
+        <li>Expand and promote alternative modes like video consultations to ease in-person demand.</li>
+        <br>
+        <li>Strengthen holiday coverage and flexible access strategies for dips in activity (December, April).</li>
+        <br>
+       </ul>
         </p>
       <h3>Approach:</h3>
-      <p>For this project Python, APIs and webscrapping were used.   
+      <p>For this project Python was used for Data wrangling, Scraping and Visualisation (Pandas, Matplotlib, Seaborn, Beautiful Soup). APIs and webscraping were also used.   
         
         <br>
-        <br>To answer the NHS's questions, I used Python with Pandas, Seaborn, and Matplotlib to clean, analyse, and visualise four datasets: actual_duration.csv, appointments_regional.csv, national_categories.xlsx, and tweets.csv. Key steps included:
+       To answer the NHS's questions, I used Python with Pandas, Seaborn, and Matplotlib to clean, analyse, and visualise four datasets: actual_duration.csv, appointments_regional.csv, national_categories.xlsx, and tweets.csv. Key steps included:
 
-        <p>Data cleaning and preprocessing
-        
-        
-        
-        
-        
-       
-      <ul>
-        <li>
-          Aggregating trends over time using .groupby()
-        </li>
-        <li>
-          Creating visualisations to identify usage and capacity patterns
-        </li>
 
-      
-        <li>
-          Extracting and analysing top hashtags from Twitter data
-        </li>
-      </ul>
     </p>
       <h3>Key Insights:</h3>
-
-      <ul>
-        <li> Charts with brief interpretation will go here.
-          
-        </li>
+      
+     <p>
+      
+        Appointment volume peaked in October 2021 and March 2022, aligning with seasonal
+          health pressures (e.g., flu season). Despite high appointment volumes, average daily
+          utilisation remained within the NHS guideline of 1.2 million per day, indicating that the NHS
+          has adequate capacity at the national level.</p>
+         
+      
+           
+     <img 
+              id="nhs-utilisation"
+              src="Images/nhs_utilisation_capacity.jpg" 
+              alt="Monthly Capacity Utilisation of Daily Appointments"
+              style="max-width: 100%; height: auto;" 
+            />   
+       
+       <p>General Practice dominates appointment volumes, especially in winter months. GPs and Other Practice Staff share the bulk of the workload. </p>
+         <br>
         
-        <li>
+          <img 
+            class="nhs-images"
+            src="Images/appointments_by_service _settings.jpg" 
+            alt="Number of Patient Appointments per month by Service Settings"
+            style="max-width: 100%; height: auto;" 
+          />
           
-        </li>
+        <br>
 
-        <br />
+        <p>Face-to-face appointments dominated, but telephone consultations were also heavily used
+          — suggesting a successful hybrid model. Home visits and video consultations remained low
+          but stable, pointing to potential underuse or limited applicability.
+</p>
+        <br>
+       
+          <img 
+            id="nhs-modes"
+            src="Images/appointments_mode.jpg" 
+            alt="Monthly Appointments Counts by Appointment Mode"
+            style="max-width: 100%; height: auto;"
+          />
+          
+        <br>
 
+       <p>Most appointments are booked same-day or within a week, highlighting the need for short-notice availability.</p>
+
+        <br>
         
-
-        <li>
+          <img 
+            id="nhs-tba"
+            src="Images/time_between_appt_book.jpg"  
+            alt="Time Between Booking and Appointment Over 11 Month Period"
+            style="max-width: 100%; height: auto;"
+          />
           
-        </li>
-        <br />
+        <br>
+
+        <p>Missed appointments "Did Not Attend" (DNAs) are highest for bookings made 8–14 days in advance — these may benefit most from targeted reminders.</p>
+
+        <br>
         
-
-        <li>
+          <img 
+            id="nhs-missed-tba"
+            src="Images/missed_appts_tba.jpg" 
+            alt="Missed Appointments by Time Between Booking and Appointment"
+            style="max-width: 100%; height: auto;" 
+          />
           
-        </li>
+
+        <br>
+
+        <p>Appointment mode affects attendance: Face-to-face appointments have the highest DNA (Did Not Attend) rate, while home visits and phone consultations see better follow-through. </p>
+        
+        <br>
+        
+          <img 
+            id="nhs-missed-modes"
+            src="Images/missed_appts_mode.jpg" 
+            alt="Missed Appointments over months by Appointment Mode"
+            style="max-width: 100%; height: auto;" 
+          />
+         
+
+        <br>
+
+        <p>Top Twitter hashtags included #Healthcare, #MedTwitter, and #DigitalHealth — showing strong engagement around innovation, education, and systemic critiques.</p>
+
+        <br>
+       
+          <img 
+            id="twitter"
+            src="Images/top_hashtags.jpg" 
+            alt="Most Frequently Used Hashtags After Removing Overrepresented Hashtags"
+            style="max-width: 100%; height: auto;"
+          />
+          
+
+        <br>
+
+
+
+               
+        <br>
+
+        <p>General Practice consistently recorded the highest number of appointments across all
+          months and quarters. Care-related encounters were the
+          dominant context type, especially under national categories like General Consultation Acute
+          and Routine. The top five locations based on record counts were found to be in and around London.</p>
+
+          <br>
+
+         
+            <img class="nhs-images"
+              src="Images/appts_seasonal_trends_service_settings.jpg" 
+              alt="Number of Patient Appointments per Service Setting in 1st Quarter (June - August 2021)"
+              style="max-width: 100%; height: auto;"
+            />
+            
+          <br>
+
+     
+    
+      
+        <img id="nhs-context-types"
+            src="Images/nhs-appointments.jpg"
+            alt="Number of Patient Appointments per Month by Context Settings"
+            style="max-width: 100%; height: auto;" 
+          />
+          
         <br />
         <p>
-          For a complete picture, please click on the links below and feel free
-          to look at my report, presentation and complete Python code in the Jupyter Notebook on GitHub. 
+          For a complete picture, feel free to look at my report and complete Python code in the Jupyter Notebook on GitHub. 
         </p>
       </ul>
 

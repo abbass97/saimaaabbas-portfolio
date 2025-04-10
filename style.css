@@ -19,6 +19,10 @@ body {
   padding: 2rem;
 }
 
+p {
+  line-height: 1.5;
+}
+
 .contact-container {
   max-width: 600px;
   margin: auto;
@@ -251,6 +255,38 @@ a {
 
 #popular_platform {
   margin-bottom: -200px;
+}
+
+#nhs-utilisation {
+  margin-bottom: -1100px;
+  margin-top: 30px;
+}
+#nhs-modes {
+  margin-bottom: -350px;
+}
+
+#nhs-tba {
+  margin-bottom: -350px;
+}
+
+#nhs-missed-tba {
+  margin-bottom: -300px;
+}
+
+#nhs-missed-modes {
+  margin-bottom: -300px;
+}
+
+#twitter {
+  margin-bottom: -100px;
+}
+
+#nhs-context-types {
+  margin-bottom: -100px;
+}
+.nhs-images {
+  margin-bottom: -200px;
+  padding: 0px;
 }
 
 .tile-container {
