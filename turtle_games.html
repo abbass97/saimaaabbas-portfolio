@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Turtle Games | Customer Analytics</title>
+  </head>
+
+  <body>
+    <header id="page_top">
+      <div class="header_left">
+        <p id="name">Saima Abbas</p>
+        <p id="id_banner">
+          Data Analyst | Machine Learning Enthusiast | Data Storyteller
+        </p>
+      </div>
+
+      <nav id="navigation">
+        <a href="index.html">Home</a>
+        <span class="divider">|</span>
+        <a href="about.html">About</a>
+        <span class="divider">|</span>
+        <a href="projects.html">Projects</a>
+        <span class="divider">|</span>
+        <a href="cv.html">CV</a>
+        <span class="divider">|</span>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <article class="main_container">
+      <p class="main_heading">Turtle Games: Customer Analytics Project</p>
+
+      <h3>Overview:</h3>
+      <p>
+        As part of the
+        <strong>LSE Data Analytics Online Career Accelerator</strong> (Course 3:
+        Advanced Analytics for Organisational Impact), this project explored how
+        Turtle Games can use data to improve marketing, customer retention, and
+        decision-making. The goal was to understand loyalty patterns, segment
+        customer groups, and analyse sentiment from customer reviews.
+      </p>
+      <p>
+        I used <strong>Python and R</strong> to perform predictive modelling,
+        clustering, and Natural Language Processing (NLP). Datasets were drawn
+        from customer demographics, loyalty behaviour, and customers' reviews
+        data.
+      </p>
+
+      <h3>For the analysis, I focused on:</h3>
+      <ul>
+        <li>
+          Predicting loyalty using salary, spending, age, and product
+          interactions
+        </li>
+        <li>
+          Building decision tree models to identify high-impact loyalty drivers
+        </li>
+        <li>
+          Clustering customers into actionable market segments using K-Means
+        </li>
+        <li>
+          Performing sentiment analysis on customers' review data using NLP
+        </li>
+      </ul>
+
+      <h3>
+        Based on the observations and insights, I was able to make the following
+        recommendations:
+      </h3>
+      <ul>
+        <li>
+          Target high-income, high-spending customers for premium loyalty
+          programs
+        </li>
+        <li>Focus marketing on ages 32–34, the most loyal age group</li>
+        <li>
+          Engage low-spending, high-income customers with discounts or
+          incentives
+        </li>
+        <li>
+          Track product purchase frequency in future datasets for deeper
+          insights
+        </li>
+        <li>
+          Encourage detailed reviews to supplement positive but neutral review
+          trends
+        </li>
+      </ul>
+
+      <h3>Approach:</h3>
+      <p>
+        To answer Turtle Games’ key business questions, I applied a multi-method
+        data analysis strategy combining both Python (Pandas, Scikit-learn,
+        Matplotlib, Seaborn, TextBlob) and R. Key steps included:
+      </p>
+      <ul>
+        <li>
+          <strong>Data Cleaning & Preparation:</strong> Removed irrelevant
+          variables, handled missing values, encoded categorical fields (like
+          gender and education), and transformed skewed variables such as
+          loyalty scores.
+        </li>
+        <li>
+          <strong>Regression Modelling (R):</strong> Tested multiple linear
+          models to predict loyalty points. The most accurate and interpretable
+          model was the one with <strong> Salary + Age + Spending</strong>.
+        </li>
+        <li>
+          <strong>Decision Tree Regression (Python):</strong> Built and pruned
+          Decision Trees mRegressor models to visualise loyalty drivers.
+          Spending and Salary emerged as the most influential predictors.
+        </li>
+        <li>
+          <strong>K-Means Clustering:</strong> Segmented customers into 5
+          distinct groups based on income and spending behaviour to support
+          targeted marketing.
+        </li>
+        <li>
+          <strong>Sentiment Analysis:</strong> Used TextBlob to analyse the
+          review text. Most reviews were neutral to positive, highlighting
+          general satisfaction and areas to improve user experience.
+        </li>
+      </ul>
+
+      <h3>Insights Summary:</h3>
+      <ul>
+        <li>
+          Loyalty peaks among customers aged 32–34, and those with high salary
+          and spending.
+        </li>
+
+        <img
+          id="games_insights"
+          src="Images/age.png"
+          alt="Histogram of Age showing age distribution"
+          style="max-width: 100%; height: auto"
+        />
+
+        <br />
+
+        <li>
+          Female and Basic-Education customers show slightly higher loyalty.
+        </li>
+
+        <img
+          id="games_insights"
+          src="Images/gender.png"
+          alt="Loyalty Points by Gender"
+          style="max-width: 100%; height: auto"
+        />
+
+        <br />
+        <li>
+          Spending and Salary are the strongest loyalty predictors; Product
+          offers limited insight.
+        </li>
+
+        <img
+          id="games_insights"
+          src="Images/correlation.png"
+          alt="Correlation Matrix showing relatioship between variables"
+          style="max-width: 100%; height: auto"
+        />
+
+        <br />
+        <li>
+          Five customer clusters are identified via K-Means segmentation, each
+          with unique income–spending traits.
+        </li>
+
+        <img
+          id="games_insights"
+          src="Images/clusters.png"
+          alt="The five clusters of customers segmentation"
+          style="max-width: 100%; height: auto"
+        />
+
+        <br />
+      </ul>
+
+      <h4 class="modelling_highlight">Modelling Highlights</h4>
+      <ul>
+        <li>
+          Best regression model is the one with:
+          <strong> Salary + Age + Spending </strong> (RMSE: 513, MAE: 395).
+        </li>
+        <img
+          id="regression_table"
+          src="Images/regression_table.png"
+          alt="Regression table showing a comparison of different regression models"
+          style="max-width: 100%; height: auto"
+        />
+
+        <br />
+        <li>
+          Top decision tree model was the one with Spending, Salary, Age (R²:
+          0.9961, MAE: 26).
+        </li>
+
+        <img
+          id="decision_tree"
+          src="Images/tree.png"
+          alt="The best decision tree regressor model"
+          style="max-width: 100%; height: auto"
+        />
+
+        <br />
+        <li>
+          Customers in Cluster 2 (high income & high spenders) are ideal for
+          premium targeting.
+        </li>
+      </ul>
+
+      <h4>Sentiment Insights</h4>
+      <ul>
+        <li>
+          Reviews are largely neutral to positive. Most common words are 'fun',
+          'game', 'great', and 'love'.
+        </li>
+
+        <img
+          id="word_cloud"
+          src="Images/word_cloud.png"
+          alt="word cloud"
+          style="max-width: 100%; height: auto"
+        />
+
+        <br />
+        <li>
+          Negative reviews highlight usability issues, product quality and
+          unclear instructions.
+        </li>
+      </ul>
+      <div class="graph-hidden">
+        <img
+          id="negative_reviews"
+          src="Images/negative_review.png"
+          alt="Negative reviews"
+        />
+      </div>
+
+      <p>
+        For a complete picture, feel free to look at my report. Click on the
+        GitHub icon to see my complete Python and R codes.
+      </p>
+      <div class="tile-container">
+        <a
+          href="https://drive.google.com/file/d/1pGt6D0BUrr1osZxfoHTPjJP-FuXlpH3f/view?usp=drive_link"
+          target="_blank"
+          class="tile"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png"
+            alt="Report"
+            class="tile-icon"
+          />
+          <span class="tile-text">Full Report</span>
+        </a>
+
+        <a
+          href="https://github.com/abbass97/turtle_games"
+          target="_blank"
+          class="tile"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            alt="GitHub"
+            class="tile-icon"
+          />
+          <span class="tile-text">GitHub </span>
+        </a>
+      </div>
+    </article>
+
+    <footer id="connect">
+      <div style="text-align: center; padding: 2rem">
+        <h3>Thank you for visiting my portfolio!</h3>
+        <p id="collab">
+          If you’d like to collaborate or get in touch, I’d love to hear from
+          you.
+        </p>
+
+        <div class="icon-row">
+          <a href="/contact.html" class="icon-link" title="Let’s Connect">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/726/726623.png"
+              alt="Connect Icon"
+              class="icon-image"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/saimaabbas52"
+            target="_blank"
+            class="icon-link"
+            title="LinkedIn"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+              alt="LinkedIn Icon"
+              class="icon-image"
+            />
+          </a>
+          <a
+            href="mailto:saimaabbas2021@gmail.com"
+            class="icon-link"
+            title="Email"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+              alt="Email Icon"
+              class="icon-image"
+            />
+          </a>
+        </div>
+        <p id="personal-brand">
+          © 2025 Saima Abbas | Designed, developed, and deployed by me — powered
+          by curiosity and caffeine.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
