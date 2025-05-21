@@ -1,21 +1,7 @@
-button {
-  background-color: #24292e;
-  color: #ffffff;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-button:hover {
-  background-color: #e80a0a;
-}
-
 body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-color: #f8f9fa;
-  margin: 0;
+  margin: 0px;
   padding: 2rem;
 }
 
@@ -23,12 +9,16 @@ p {
   line-height: 1.5;
 }
 
+.main_container {
+  margin-top: 10px;
+}
 .contact-container {
   max-width: 600px;
-  margin: auto;
-  background-color: #fff;
+  margin: 20px auto 0 auto;
+  background-color: #004225;
+  color: #f2f2f2;
   padding: 2rem;
-  border-radius: 10px;
+  border-radius: 4px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -48,12 +38,13 @@ textarea {
   width: 100%;
   padding: 0.75rem;
   margin-bottom: 1.5rem;
+
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 4px;
   font-size: 1rem;
 }
 
-button {
+/*button {
   background-color: #007bff;
   color: white;
   padding: 0.75rem 1.5rem;
@@ -63,30 +54,62 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+  */
 
 .connect-btn {
   padding: 10px 22px;
   font-size: 1rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-color: white;
-  color: #010810;
-  border: 1px solid #010810;
+  background-color: #f2f2f2;
+  color: #004225;
+  border: 1.5px solid #004225;
 
-  border-radius: 0px;
+  border-radius: 4px;
   cursor: pointer;
   font-weight: 500;
   transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
 
 .connect-btn:hover {
-  background-color: #010810;
-  color: white;
+  background-color: #004225;
+  color: #f2f2f2;
 }
 
+.cv-button {
+  background-color: #f2f2f2;
+  color: #004225;
+  border: 1.5px solid #004225;
+  padding: 0.75em 1.5em;
+  margin-left: 50px;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.cv-button:hover {
+  background-color: #e0e0e0;
+}
+
+.form-button {
+  background-color: #f2f2f2;
+  color: #004225;
+  border: 1.5px solid #004225;
+  padding: 0.75em 1.5em;
+
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.form-button:hover {
+  background-color: #e0e0e0;
+}
 #connect {
-  border-top: 2px solid #ddd;
-  border-bottom: 2px solid #ddd;
-  margin-top: 75px;
+  border-top: 1px solid #ddd;
+  /* border-bottom: 2px solid #ddd; */
+  margin-top: 60px;
 }
 
 #collab {
@@ -94,10 +117,16 @@ button {
 }
 
 #name {
-  margin: 0;
+  height: 30px;
+  width: 104%;
   font-size: 1.2rem;
   padding: 5px 0;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.name {
+  color: #004225;
+  font-size: 20px;
+  margin-bottom: 0px;
 }
 
 #page_top {
@@ -106,7 +135,8 @@ button {
   align-items: center;
   padding: 1rem 2rem;
   background-color: #f8f9fa;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-top: -30px;
   flex-wrap: wrap; /* Optional: helps on smaller screens */
 }
 
@@ -117,9 +147,9 @@ button {
 }
 
 #id_banner {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin: 0;
-  color: #555;
+  color: #004225;
 }
 
 #navigation {
@@ -129,17 +159,18 @@ button {
   gap: 10px; /* spacing between links and dividers */
   font-family: Cambria, serif;
   font-size: 1rem;
+  letter-spacing: -1px;
 }
 
 #navigation a {
   text-decoration: none;
-  color: #00060b;
+  color: #004225;
   padding: 0 5px;
   transition: color 0.3s ease;
 }
 
 #navigation a:hover {
-  color: #7d8182;
+  color: #4c7f69;
 }
 
 .divider {
@@ -163,86 +194,75 @@ a {
 
 .header-flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 2rem;
   flex-wrap: wrap; /* optional: helps on small screens */
+  background-color: #004225;
+  /*background: linear-gradient(to right, #004225 0%, #f2f2f2 100%);*/
+  border-radius: 4px;
 }
 
 .text-content {
   flex: 1;
   max-width: 55%;
+  margin-right: 50px;
+  color: #f2f2f2;
 }
 
-/*
-#resume {
-  flex: 1;
-  max-width: 10px;
-  margin-top: 2rem; 
-}
-
-#resume button {
-  padding: 8px 12px; 
-  margin-top: 50px;
-  font-size: 1rem;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#resume button:hover {
-  background-color: #0056b3;
-}
-*/
 #cv button {
   padding: 8px 12px;
   margin-top: 10px;
   margin-left: 40%;
   font-size: 0.9rem; /* Reduce text size */
-  background-color: white;
-  color: #010810;
+  background-color: #f2f2f2;
+  color: #004225;
   border: 1px solid #010810;
 
-  border-radius: 0px;
+  border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 #cv button:hover {
-  background-color: #010810;
-  color: white;
+  background-color: #004225;
+  color: #f2f2f2;
 }
 
 .saima_pic {
   flex: 1;
-  max-width: 30%;
+  max-width: 35%;
   height: auto;
-  max-height: 500px; /* Limit height */
+  max-height: 475px; /* Limit height */
   width: 100%; /* Keeps it responsive within its container */
-  border: 10px solid #ccc; /* light gray border */
+  border-radius: 0px; /* light gray border */
   object-fit: cover;
-  border-radius: 8px;
+  border-color: rgb(204, 204, 204);
+  margin-right: 50px;
+  margin-top: -32px;
+  margin-bottom: -32px;
+  /*position: absolute;
+  right: 0%;
+  transform: translate(15%, 0); */
 }
 
 .saima_name {
   font-size: 3.5rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-weight: bold;
+  font-weight: 700;
+  letter-spacing: -3.5px;
   margin: 0 0 1rem 0;
+  margin: 50px;
 }
 
 #punchline {
   font-size: 1.2rem;
+  line-height: 1.5; /* Recommended for readability */
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-style: oblique;
-  color: #333;
+  color: #f2f2f2;
   line-height: 1.5;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin: 50px;
 }
 
 #customer_age {
@@ -455,4 +475,5 @@ a {
   color: #555;
   background-color: #f9f9f9;
   border-top: 1px solid #ddd;
+  margin-top: 50px;
 }
