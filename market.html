@@ -49,7 +49,7 @@
       <h1 class="main_heading">Exploratory Data Analysis for 2Market</h1>
 
       <h2 class="secondary_heading">Overview:</h2>
-      <p  class="projects-intro">
+      <p class="projects-intro">
         2Market, a global supermarket, conducted a customer sales and marketing
         review which revealed a significantly lower online purchases via
         different social media platforms compared to their in-store sales. With
@@ -61,23 +61,33 @@
         identifying high-performing product categories, preferred platforms
         across demographics, and regional purchasing trends.
         <br />
-        <br /> <p class="bullets-intro">  Based on the gathered insights, I was able to make the following
-        recommendations: </p>
-        <ul>
-        <li>To boost online sales and lead conversions, supermarket
-        sales department should target customers aged 50–65 in Spain, Saudi
-        Arabia, and Canada via Twitter, Instagram, and Bulk Mail. 
-        </li><br/>
-        <li>The campaigns
-        should focus on promoting liquor and non-vegetable products—categories
-        most aligned with the purchasing patterns of this segment.
-        </li><br/>
-        </ul>
       </p>
-      <h2 class="secondary_heading">Approach:</h2>
-      <p class="bullets-intro">For this project Excel, SQL, PgAdmin and Tableau were used.</p>
-      <p class="projects-intro">
+      <br />
+      <p class="bullets-intro">
+        Based on the gathered insights, I was able to make the following
+        recommendations:
+      </p>
       <ul>
+        <li>
+          To boost online sales and lead conversions, supermarket sales
+          department should target customers aged 50–65 in Spain, Saudi Arabia,
+          and Canada via Twitter, Instagram, and Bulk Mail.
+        </li>
+        <br />
+        <li>
+          The campaigns should focus on promoting liquor and non-vegetable
+          products—categories most aligned with the purchasing patterns of this
+          segment.
+        </li>
+        <br />
+      </ul>
+
+      <h2 class="secondary_heading">Approach:</h2>
+      <p class="bullets-intro">
+        For this project Excel, SQL, PgAdmin and Tableau were used.
+      </p>
+      <!--  <p class="projects-intro"> -->
+      <ul class="projects-intro">
         <li>
           <strong>Data Cleaning & Processing:</strong> Prior to conducting
           Exploratory Data Analysis, the data was cleaned and pre-processed
@@ -85,15 +95,16 @@
           spaces. For data integrity, the data was checked for duplicates,
           spelling errors and name inconsistencies.
         </li>
-        <br/>
-         <li> <strong>Exploratory Analysis:</strong> Descriptive statistical
+        <br />
+        <li>
+          <strong>Exploratory Analysis:</strong> Descriptive statistical
           analysis and Pivot Table in Microsoft Excel and advanced SQL queries
           in PgAdmin were run to explore customer demographics, their purchase
           behaviour and ad platform effectiveness. Here is an example of a SQL
           code I used:
         </li>
       </ul>
-        <pre>
+      <pre>
           <code>
             The total spend per product per country
 
@@ -111,89 +122,80 @@ ORDER BY "country" DESC;
 
           </code>
         </pre>
-<ul>
+      <ul>
         <li>
           <strong>Data Visualisation: </strong>Tableau was used to create
           interactive and engaging visualisations to showcase key findings.
           Excel charts and graphs were also used to display the insights.
         </li>
-      </ul> </p>
+      </ul>
 
       <h2 class="secondary_heading">Key Insights:</h2>
-     <div class="key-insights-01">
-      <div class="project-isights-text">
-      
-
-      <ul class="key-bullets-points">
-        <li>
-          <strong>Customer Demographics:</strong> The average customer age is
-          54, with spending patterns varying by age and income as seen in the
-          figure below.
-        </li>
-      </ul>
+      <div class="key-insights-01">
+        <div class="project-isights-text">
+          <ul class="key-bullets-points">
+            <li>
+              <strong>Customer Demographics:</strong> The average customer age
+              is 54, with spending patterns varying by age and income as seen in
+              the figure below.
+            </li>
+          </ul>
+        </div>
+        <div class="image-container">
+          <img
+            class="customer_age"
+            src="Images/customer_age.jpg"
+            alt="Avarage customer age"
+          />
+        </div>
       </div>
-       <div class="image-container">
-        <img
-          class="customer_age"
-          src="Images/customer_age.jpg"
-          alt="Avarage customer age"
-          
-        />
-       </div>
-     </div>
 
-     <div class="key-insights-02">
-      <div class="project-isights-text">
-        <ul class="key-bullets-points">
-        <li>
-          <strong>Sales Trends:</strong> Liquor is the best-selling item across
-          all demographics and regions.
-        </li>
-
-        </ul>
+      <div class="key-insights-02">
+        <div class="project-isights-text">
+          <ul class="key-bullets-points">
+            <li>
+              <strong>Sales Trends:</strong> Liquor is the best-selling item
+              across all demographics and regions.
+            </li>
+          </ul>
+        </div>
+        <div class="image-container-02">
+          <img
+            class="popular_product"
+            src="Images/products_by_age.jpg"
+            alt="Most popular social media platform"
+          />
+        </div>
       </div>
-<div class="image-container-02">
-        <img
-          class="popular_product"
-          src="Images/products_by_age.jpg"
-          alt="Most popular social media platform"
-          
-        />
-</div>
-     </div>
 
       <div class="key-insights-03">
-      <div class="project-isights-text">
-        <ul class="key-bullets-points">
-        <li>
-          <strong>Advertising Effectiveness:</strong> Twitter, Instagram, and
-          Bulk Mail are the most successful ad platforms.
-        </li>
-        </ul>
-      </div>
-      <div class="image-container-02">
-        <img
-          id="popular_platform"
-          src="Images/popular_platform.jpg"
-          alt="Most popular social media platform"
-          
-        />
-      </div>
+        <div class="project-isights-text">
+          <ul class="key-bullets-points">
+            <li>
+              <strong>Advertising Effectiveness:</strong> Twitter, Instagram,
+              and Bulk Mail are the most successful ad platforms.
+            </li>
+          </ul>
+        </div>
+        <div class="image-container-02">
+          <img
+            id="popular_platform"
+            src="Images/popular_platform.jpg"
+            alt="Most popular social media platform"
+          />
+        </div>
       </div>
       <ul class="key-bullets-points">
         <li>
           <strong>Regional Insights:</strong> Spain recorded the highest total
           sales, while households with fewer children spent more on groceries.
         </li>
-
       </ul>
-        <br />
-        <p class="projects-intro">
-          For a complete picture, please click on the links below and feel free
-          to peruse my report, and view my complete SQL code and Tableau
-          Dadshboard.
-        </p>
-      
+      <br />
+      <p class="projects-intro">
+        For a complete picture, please click on the links below and feel free to
+        peruse my report, and view my complete SQL code and Tableau Dadshboard.
+      </p>
 
       <div class="tile-container">
         <a
@@ -202,13 +204,31 @@ ORDER BY "country" DESC;
           class="tile"
           title="PDF Report"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"  viewBox="0 0 256 256"><path d="M200,164v8h12a12,12,0,0,1,0,24H200v12a12,12,0,0,1-24,0V152a12,12,0,0,1,12-12h32a12,12,0,0,1,0,24ZM92,172a32,32,0,0,1-32,32H56v4a12,12,0,0,1-24,0V152a12,12,0,0,1,12-12H60A32,32,0,0,1,92,172Zm-24,0a8,8,0,0,0-8-8H56v16h4A8,8,0,0,0,68,172Zm100,8a40,40,0,0,1-40,40H112a12,12,0,0,1-12-12V152a12,12,0,0,1,12-12h16A40,40,0,0,1,168,180Zm-24,0a16,16,0,0,0-16-16h-4v32h4A16,16,0,0,0,144,180ZM36,108V40A20,20,0,0,1,56,20h96a12,12,0,0,1,8.49,3.52l56,56A12,12,0,0,1,220,88v20a12,12,0,0,1-24,0v-4H148a12,12,0,0,1-12-12V44H60v64a12,12,0,0,1-24,0ZM160,57V80h23Z"></path></svg>
-        
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#000000"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M200,164v8h12a12,12,0,0,1,0,24H200v12a12,12,0,0,1-24,0V152a12,12,0,0,1,12-12h32a12,12,0,0,1,0,24ZM92,172a32,32,0,0,1-32,32H56v4a12,12,0,0,1-24,0V152a12,12,0,0,1,12-12H60A32,32,0,0,1,92,172Zm-24,0a8,8,0,0,0-8-8H56v16h4A8,8,0,0,0,68,172Zm100,8a40,40,0,0,1-40,40H112a12,12,0,0,1-12-12V152a12,12,0,0,1,12-12h16A40,40,0,0,1,168,180Zm-24,0a16,16,0,0,0-16-16h-4v32h4A16,16,0,0,0,144,180ZM36,108V40A20,20,0,0,1,56,20h96a12,12,0,0,1,8.49,3.52l56,56A12,12,0,0,1,220,88v20a12,12,0,0,1-24,0v-4H148a12,12,0,0,1-12-12V44H60v64a12,12,0,0,1-24,0ZM160,57V80h23Z"
+            ></path>
+          </svg>
         </a>
 
         <a href="dashboard.html" class="tile" title="Tableau Dashboard">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"  viewBox="0 0 256 256"><path d="M236,208a12,12,0,0,1-12,12H32a12,12,0,0,1-12-12V48a12,12,0,0,1,24,0v99l43.51-43.52a12,12,0,0,1,17,0L128,127l43-43H160a12,12,0,0,1,0-24h40a12,12,0,0,1,12,12v40a12,12,0,0,1-24,0V101l-51.51,51.52a12,12,0,0,1-17,0L96,129,44,181v15H224A12,12,0,0,1,236,208Z"></path></svg>
-          
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#000000"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M236,208a12,12,0,0,1-12,12H32a12,12,0,0,1-12-12V48a12,12,0,0,1,24,0v99l43.51-43.52a12,12,0,0,1,17,0L128,127l43-43H160a12,12,0,0,1,0-24h40a12,12,0,0,1,12,12v40a12,12,0,0,1-24,0V101l-51.51,51.52a12,12,0,0,1-17,0L96,129,44,181v15H224A12,12,0,0,1,236,208Z"
+            ></path>
+          </svg>
         </a>
 
         <a
@@ -217,13 +237,20 @@ ORDER BY "country" DESC;
           class="tile"
           title="SQL Code on GitHub"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"/></svg>
-       
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="ionicon"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"
+            />
+          </svg>
         </a>
       </div>
     </article>
 
-   <footer class="connect">
+    <footer class="connect">
       <h4 class="tertiary-heading">Thank you for visiting my portfolio!</h4>
       <p class="collab">
         If you’d like to collaborate or get in touch, I’d love to hear from you.

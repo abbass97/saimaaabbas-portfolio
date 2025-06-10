@@ -69,48 +69,57 @@
       </p>
       <h3>For the statistical analysis, I focused on:</h3>
 
-      <p class="bullets-intro">
-      <ul>
+      <!--   <p class="bullets-intro">  -->
+      <ul class="bullets-intro">
         <li>
           Predicting loyalty using salary, spending, age, and product
           interactions
-        </li> <br/>
+        </li>
+        <br />
         <li>
           Building decision tree models to identify high-impact loyalty drivers
-        </li><br/>
+        </li>
+        <br />
         <li>
           Clustering customers into actionable market segments using K-Means
-        </li><br/>
+        </li>
+        <br />
         <li>
           Performing sentiment analysis on customers' review data using NLP
-        </li><br/>
+        </li>
+        <br />
       </ul>
-      </p>
+
       <h3>
         Based on the observations and insights, I was able to make the following
         recommendations:
       </h3>
-      <p class="bullets-intro">
-      <ul>
+      <!--  <p class="bullets-intro"> -->
+      <ul class="bullets-intro">
         <li>
           Target high-income, high-spending customers for premium loyalty
           programs
-        </li><br/>
-        <li>Focus marketing on ages 32–34, the most loyal age group</li><br/>
+        </li>
+        <br />
+        <li>Focus marketing on ages 32–34, the most loyal age group</li>
+        <br />
         <li>
           Engage low-spending, high-income customers with discounts or
           incentives
-        </li><br/>
+        </li>
+        <br />
         <li>
           Track product purchase frequency in future datasets for deeper
           insights
-        </li><br/>
+        </li>
+        <br />
         <li>
           Encourage detailed reviews to supplement positive but neutral review
           trends
-        </li><br/>
+        </li>
+        <br />
       </ul>
-</p>
+
       <h2 class="secondary_heading">Approach:</h2>
       <p class="projects-intro">
         To answer Turtle Games’ key business questions, I applied a multi-method
@@ -118,203 +127,193 @@
         Matplotlib, Seaborn, TextBlob) and R. Key steps included:
       </p>
       <br />
-      <p class="bullets-intro">
-      <ul>
+      <!-- <p class="bullets-intro"> -->
+      <ul class="bullets-intro">
         <li>
           <strong>Data Cleaning & Preparation:</strong> Removed irrelevant
           variables, handled missing values, encoded categorical fields (like
           gender and education), and transformed skewed variables such as
           loyalty scores.
-        </li><br/>
+        </li>
+        <br />
         <li>
           <strong>Regression Modelling (R):</strong> Tested multiple linear
           models to predict loyalty points. The most accurate and interpretable
           model was the one with <strong> Salary + Age + Spending</strong>.
         </li>
-       <br/>
+        <br />
         <li>
           <strong>Decision Tree Regression (Python):</strong> Built and pruned
           Decision Trees mRegressor models to visualise loyalty drivers.
           Spending and Salary emerged as the most influential predictors.
-        </li><br/>
+        </li>
+        <br />
         <li>
           <strong>K-Means Clustering:</strong> Segmented customers into 5
           distinct groups based on income and spending behaviour to support
           targeted marketing.
-        </li><br/>
+        </li>
+        <br />
         <li>
           <strong>Sentiment Analysis:</strong> Used TextBlob to analyse the
           review text. Most reviews were neutral to positive, highlighting
           general satisfaction and areas to improve user experience.
-        </li><br/>
-      </ul>
-</p>
-      <h2 class="secondary_heading">Insights Summary:</h2>
- <div class="key-insights-04">
-  <div class="project-isights-text">
-
-      <ul class="key-bullets-points">
-        <li>
-          Loyalty peaked among customers aged 32–34, and those with high salary
-          and spending.
         </li>
-</ul>
-</div>
-<div class="image-container">
-          <img
-          id="games_insights"
-          src="Images/age.png"
-          alt="Histogram of Age showing age distribution"
-          
-        />
-</div>
-</div>
-    
- <div class="key-insights-05">
-  <div class="project-isights-text">
-
-      <ul class="key-bullets-points">
-        <li>
-          Female and Basic-Education customers showed slightly higher loyalty.
-        </li>
-</ul>
-</div>
-<div class="image-container">
-        <img
-          id="games-insights-02"
-          src="Images/gender.png"
-          alt="Loyalty Points by Gender"
-          
-        />
-</div>
-</div>
-      <div class="key-insights-06">
-      <div class="project-isights-text">
-
-      <ul class="key-bullets-points">
-        <li>
-          Spending and Salary were the strongest loyalty predictors; Product
-          offered limited insight.
-        </li>
-</ul>
-  </div>
-  <div class="image-container">
-        <img
-          id="correlation-matrix"
-          src="Images/correlation.png"
-          alt="Correlation Matrix showing relatioship between variables"
-          
-        />
-</div>
-</div>
-        <div class="key-insights-06">
-        <div class="project-isights-text">
-
-       <ul class="key-bullets-points">
-        <li>
-          Five customer cluster swere identified via K-Means segmentation, each
-          with unique income–spending traits.
-        </li>
-        <li>
-          Customers in Cluster 2 (high income & high spenders) were ideal for
-          premium targeting.
-        </li>
-</ul>
-</div>
-<div class="image-container">
-        <img
-          id="clusters"
-          src="Images/clusters.png"
-          alt="The five clusters of customers segmentation"
-          style="max-width: 100%; height: auto"
-        />
-</div>
-</div>
         <br />
       </ul>
 
-     
-<div class="key-insights-05">      
-
-      
-       
+      <h2 class="secondary_heading">Insights Summary:</h2>
+      <div class="key-insights-04">
         <div class="project-isights-text">
-      <ul class="key-bullets-points">
-        <li>
-          <strong>Modelling Insights:</strong>
-          <br/>Best regression model was the one with:
-          Salary + Age + Spending (RMSE: 513, MAE: 395).
-        </li>
-        </ul>
+          <ul class="key-bullets-points">
+            <li>
+              Loyalty peaked among customers aged 32–34, and those with high
+              salary and spending.
+            </li>
+          </ul>
         </div>
         <div class="image-container">
-        <img
-          id="regression_table"
-          src="Images/regression_table.png"
-          alt="Regression table showing a comparison of different regression models"
-          style="max-width: 100%; height: auto"
-        />
-</div>
+          <img
+            id="games_insights"
+            src="Images/age.png"
+            alt="Histogram of Age showing age distribution"
+          />
+        </div>
+      </div>
 
-</div>
-       <div class="key-insights-06">      
-         <div class="project-isights-text">
-      <ul class="key-bullets-points">
-        <li>
-          Top decision tree model was the one with Spending, Salary, Age (R²:
-          0.9961, MAE: 26).
-        </li>
-</ul>
-</div>
-<div class="image-container">
-        <img
-          id="decision_tree"
-          src="Images/tree.png"
-          alt="The best decision tree regressor model"
-          style="max-width: 100%; height: auto"
-        />
-</div>
-</div>
-      
-        
-    <div class="key-insights-05">      
-         <div class="project-isights-text">
-      <ul class="key-bullets-points">  
+      <div class="key-insights-05">
+        <div class="project-isights-text">
+          <ul class="key-bullets-points">
+            <li>
+              Female and Basic-Education customers showed slightly higher
+              loyalty.
+            </li>
+          </ul>
+        </div>
+        <div class="image-container">
+          <img
+            id="games-insights-02"
+            src="Images/gender.png"
+            alt="Loyalty Points by Gender"
+          />
+        </div>
+      </div>
+      <div class="key-insights-06">
+        <div class="project-isights-text">
+          <ul class="key-bullets-points">
+            <li>
+              Spending and Salary were the strongest loyalty predictors; Product
+              offered limited insight.
+            </li>
+          </ul>
+        </div>
+        <div class="image-container">
+          <img
+            id="correlation-matrix"
+            src="Images/correlation.png"
+            alt="Correlation Matrix showing relatioship between variables"
+          />
+        </div>
+      </div>
+      <div class="key-insights-06">
+        <div class="project-isights-text">
+          <ul class="key-bullets-points">
+            <li>
+              Five customer cluster swere identified via K-Means segmentation,
+              each with unique income–spending traits.
+            </li>
+            <li>
+              Customers in Cluster 2 (high income & high spenders) were ideal
+              for premium targeting.
+            </li>
+          </ul>
+        </div>
+        <div class="image-container">
+          <img
+            id="clusters"
+            src="Images/clusters.png"
+            alt="The five clusters of customers segmentation"
+            style="max-width: 100%; height: auto"
+          />
+        </div>
+      </div>
+      <br />
 
-        <li>
-          <strong>Sentiment Insights</strong>
-          <br/>Reviews were largely neutral to positive. Most common words were 'fun',
-          'game', 'great', and 'love'.
-        </li>
-</ul>
-</div>
-<div class="image-container">
-        <img
-          id="word_cloud"
-          src="Images/word_cloud.png"
-          alt="word cloud"
-          style="max-width: 100%; height: auto"
-        />
-</div>
-</div>
-        <div class="key-insights-06">      
-         <div class="project-isights-text">
-      <ul class="key-bullets-points">  
-        <li>
-          Negative reviews highlight usability issues, product quality and
-          unclear instructions.
-        </li>
-      </ul>
+      <div class="key-insights-05">
+        <div class="project-isights-text">
+          <ul class="key-bullets-points">
+            <li>
+              <strong>Modelling Insights:</strong>
+              <br />Best regression model was the one with: Salary + Age +
+              Spending (RMSE: 513, MAE: 395).
+            </li>
+          </ul>
+        </div>
+        <div class="image-container">
+          <img
+            id="regression_table"
+            src="Images/regression_table.png"
+            alt="Regression table showing a comparison of different regression models"
+            style="max-width: 100%; height: auto"
+          />
+        </div>
       </div>
-      <div class="graph-hidden">
-        <img
-          id="negative_reviews"
-          src="Images/negative_review.png"
-          alt="Negative reviews"
-        />
+      <div class="key-insights-06">
+        <div class="project-isights-text">
+          <ul class="key-bullets-points">
+            <li>
+              Top decision tree model was the one with Spending, Salary, Age
+              (R²: 0.9961, MAE: 26).
+            </li>
+          </ul>
+        </div>
+        <div class="image-container">
+          <img
+            id="decision_tree"
+            src="Images/tree.png"
+            alt="The best decision tree regressor model"
+            style="max-width: 100%; height: auto"
+          />
+        </div>
       </div>
+
+      <div class="key-insights-05">
+        <div class="project-isights-text">
+          <ul class="key-bullets-points">
+            <li>
+              <strong>Sentiment Insights</strong>
+              <br />Reviews were largely neutral to positive. Most common words
+              were 'fun', 'game', 'great', and 'love'.
+            </li>
+          </ul>
+        </div>
+        <div class="image-container">
+          <img
+            id="word_cloud"
+            src="Images/word_cloud.png"
+            alt="word cloud"
+            style="max-width: 100%; height: auto"
+          />
+        </div>
       </div>
-<br/>
+      <div class="key-insights-06">
+        <div class="project-isights-text">
+          <ul class="key-bullets-points">
+            <li>
+              Negative reviews highlight usability issues, product quality and
+              unclear instructions.
+            </li>
+          </ul>
+        </div>
+        <div class="graph-hidden">
+          <img
+            id="negative_reviews"
+            src="Images/negative_review.png"
+            alt="Negative reviews"
+          />
+        </div>
+      </div>
+      <br />
       <p class="projects-intro">
         For a complete picture, feel free to look at my report. Click on the
         GitHub icon to see my complete Python and R codes.
