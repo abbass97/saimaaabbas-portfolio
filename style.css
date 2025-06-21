@@ -791,8 +791,8 @@ img#word_cloud {
     font-size: 50%;
   }
   .main_heading {
-    font-size: 3rem;
-    letter-spacing: -1.2px;
+    font-size: 2rem;
+    letter-spacing: -1.1px;
   }
   #page_top {
     flex-direction: column;
