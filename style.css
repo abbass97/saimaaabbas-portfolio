@@ -779,7 +779,7 @@ img#word_cloud {
   padding: 1rem 0;
   font-size: 1.2rem;
   color: #555;
-  background-color: #f9f9f9;
+  background-color: #fff;
   border-top: 1px solid #ddd;
   margin-top: 50px;
 }
@@ -1180,6 +1180,13 @@ img#word_cloud {
     font-size: 62.5%; /* 1rem = 10px baseline */
   }
 
+  .main_container,
+  .project-2Market,
+  .project-nhs,
+  .project-games,
+  .eProject{
+    max-width: 120rem;
+  }
   /* Top section with nav */
   #page_top {
     max-width: 1400px;
@@ -1191,10 +1198,19 @@ img#word_cloud {
     flex-wrap: nowrap;
   }
 
-  .nav-menu {
-    gap: 2rem;
-    font-size: 1.6rem;
+  .nav-menu li a {
+    
+    font-size: 2.5rem;
   }
+  .dropdown-menu li a{
+    font-size: 1.8rem;
+  }
+.name
+{font-size: 2.5rem;}
+
+#id_banner{
+  font-size: 1.8rem;
+}
 
   /* Header section */
   .header-flex {
@@ -1206,9 +1222,21 @@ img#word_cloud {
     padding: 4rem;
     gap: 6rem;
   }
+  .punchline{
+    font-size: 2.6rem;
+    line-height: 1.9;
+    margin-bottom: 2rem;
+  }
+.saima_name{
+  font-size: 6rem;
 
+}
+
+.cv-button{
+  margin-top: 1rem;
+}
   .main_heading {
-    font-size: 4.4rem;
+    font-size: 4rem;
     letter-spacing: -1.5px;
     margin-bottom: 2rem;
   }
@@ -1225,14 +1253,20 @@ img#word_cloud {
     letter-spacing: -0.75px;
     margin-bottom: 1.5rem;
   }
-
+  .bullets-intro{
+    font-size: 2rem;
+    line-height: 1.7;
+  }
+.project_overview{
+  font-size: 2rem;
+}
   /* Hero and About layout */
   .about-hero,
   .hero-story {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 5rem;
     align-items: center;
     padding: 4rem;
@@ -1256,7 +1290,7 @@ img#word_cloud {
   .projects-intro,
   ul,
   li {
-    font-size: 1.7rem;
+    font-size: 2rem;
     line-height: 1.7;
     max-width: 85ch;
     margin: 0 auto 2rem auto;
@@ -1297,5 +1331,10 @@ img#word_cloud {
     text-align: center;
     font-size: 1.5rem;
     border-top: 1px solid #ccc;
+  }
+  
+  .graph-hidden {
+    max-width: 1000px;
+    margin: 4rem auto 25rem auto;
   }
 }
