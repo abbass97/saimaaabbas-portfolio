@@ -48,7 +48,7 @@ html {
 body {
   /*font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
   font-family: "Inter", sans-serif;
-  background-color: #f8f9fa;
+  background-color: #fff;
   margin: 2rem;
   padding: 2rem;
 }
@@ -253,7 +253,7 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1rem;
-  background-color: #f8f9fa;
+  background-color: #fff;
   border-bottom: 1px solid #ddd;
   margin-top: -30px;
   flex-wrap: wrap; /* Optional: helps on smaller screens */
@@ -1172,5 +1172,130 @@ img#word_cloud {
     display: block;
     object-fit: contain;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 1201px) {
+  html {
+    font-size: 62.5%; /* 1rem = 10px baseline */
+  }
+
+  /* Top section with nav */
+  #page_top {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .nav-menu {
+    gap: 2rem;
+    font-size: 1.6rem;
+  }
+
+  /* Header section */
+  .header-flex {
+    max-width: 1400px;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    gap: 6rem;
+  }
+
+  .main_heading {
+    font-size: 4.4rem;
+    letter-spacing: -1.5px;
+    margin-bottom: 2rem;
+  }
+
+  .secondary_heading {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    letter-spacing: -1px;
+  }
+
+  h3,
+  .skills {
+    font-size: 2rem;
+    letter-spacing: -0.75px;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Hero and About layout */
+  .about-hero,
+  .hero-story {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    align-items: center;
+    padding: 4rem;
+  }
+
+  .about-hero-text,
+  .text-content {
+    flex: 1;
+    font-size: 1.8rem;
+    line-height: 1.7;
+  }
+
+  .hero-photo,
+  .hero-photo-2,
+  .hero-image-box {
+    max-width: 400px;
+    height: auto;
+  }
+
+  /* Project and content sections */
+  .projects-intro,
+  ul,
+  li {
+    font-size: 1.7rem;
+    line-height: 1.7;
+    max-width: 85ch;
+    margin: 0 auto 2rem auto;
+  }
+
+  ul {
+    padding-left: 2rem;
+  }
+
+  li {
+    margin-bottom: 1rem;
+  }
+
+  /* PDF viewer (if used) */
+  .pdf-embed {
+    width: 100%;
+    max-width: 1200px;
+    height: 900px;
+    margin: 4rem auto;
+    border: none;
+  }
+
+  /* Contact form container */
+  .contact-container {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 4rem;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Footer */
+  footer.connect {
+    max-width: 1400px;
+    margin: 6rem auto 0 auto;
+    padding: 3rem 4rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-top: 1px solid #ccc;
   }
 }
