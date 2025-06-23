@@ -1206,7 +1206,8 @@ img#word_cloud {
     font-size: 1.8rem;
   }
 .name
-{font-size: 2.5rem;}
+{font-size: 2.5rem;
+margin-bottom: 1rem;}
 
 #id_banner{
   font-size: 1.8rem;
@@ -1277,8 +1278,16 @@ img#word_cloud {
     flex: 1;
     font-size: 1.8rem;
     line-height: 1.7;
-  }
 
+  }
+.hero-text,
+.projects-intro,
+.cv-text{
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+  margin-left: 1rem;
+   max-width: 85ch;
+}
   .hero-photo,
   .hero-photo-2,
   .hero-image-box {
@@ -1287,7 +1296,7 @@ img#word_cloud {
   }
 
   /* Project and content sections */
-  .projects-intro,
+  
   ul,
   li {
     font-size: 2rem;
